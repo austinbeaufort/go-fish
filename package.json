@@ -1,0 +1,19 @@
+{
+  "name": "go-fish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classic-deck": "^1.0.4",
+    "ez-read": "^1.0.9",
+    "node-emoji": "^1.10.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}

@@ -1,0 +1,167 @@
+body {
+    text-align: center;
+    background: url(/images/background.png) lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Permanent Marker', cursive;
+    /* background-position: 0px -100px; */
+}
+
+.new-game {
+    margin-top: 10px;
+}
+
+.sets-found {
+    margin-top: -35px;
+}
+
+.card {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.user-score-display, .comp-score-display, .card-deck {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.deck-cards {
+    font-size: 30px;
+    color: black;
+}
+
+.choice-buttons {
+    margin-top: -30px;
+}
+
+.choice-button-container, .user-respsonse {
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+
+.user-score-display {
+    padding-left: 300px;
+}
+
+.comp-score-display {
+    padding-right: 300px;
+}
+
+.card-deck {
+    padding-left: 100px;
+}
+
+
+
+.comp-cards, .player-cards {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.player-cards {
+    margin-top: 20px;
+}
+
+
+.score-deck-container {
+    display: flex;
+}
+
+
+.toggle-content {
+	display: none;
+}
+
+.toggle-content.is-visible {
+	display: block;
+}
+
+
+
+
+/* choice button styling */
+.choice {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: -30px;
+}
+.choice:hover {
+    outline: none;
+}
+
+.choice:active {
+    background-color: rgb(141, 219, 245);
+}
+.wave2 {
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.wave2:focus {
+    outline: none;
+}
+.waveA2 {
+    background-color: lightcyan;
+    border-radius: 50%;
+    color: blue;
+    border: 2px solid rgb(91, 129, 255);
+    box-shadow: 2px 2px 2px 1px rgba(60, 112, 255, 0.2);
+    transition: 0.3s ease;
+}
+.waveA2:hover {
+    border: 3px solid rgb(0, 204, 255);
+    box-shadow: 12px 12px 2px 1px rgba(139, 164, 231, 0.2);
+}
+
+
+
+
+
+/* new-game button styling */
+
+.input {
+    padding: 20px 70px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    font-family: 'Lobster', cursive;
+}
+.input:hover {
+    outline: none;
+}
+
+.input:active {
+    background-color: rgb(141, 219, 245);
+}
+.wave {
+    border-radius: 40px 0 40px 0;
+    transition: 0.3s ease;
+}
+
+.wave:focus {
+    outline: none;
+}
+.waveA {
+    background-color: lightcyan;
+    border-radius: 40px 0 40px 0;
+    color: blue;
+    border: 2px solid rgb(91, 129, 255);
+    box-shadow: 2px 2px 2px 1px rgba(60, 112, 255, 0.2);
+    transition: 0.3s ease;
+}
+.waveA:hover {
+    border: 3px solid rgb(0, 204, 255);
+    box-shadow: 12px 12px 2px 1px rgba(60, 112, 255, 0.2);
+}
