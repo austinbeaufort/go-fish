@@ -1,4 +1,3 @@
-import { head, init } from 'ez-read';
 import updateUserDisplay from '../update-user-display';
 import { userScoreDisplay } from '/model/model';
 
