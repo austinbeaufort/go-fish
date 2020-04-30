@@ -1,5 +1,7 @@
-import updateUserDisplay from './update-user-display';
-import { userScoreDisplay } from './model';
+import { head, init } from 'ez-read';
+import updateUserDisplay from '../update-user-display';
+import { userScoreDisplay } from '/model/model';
+
 
 const user = {
     hand: [],
@@ -7,7 +9,6 @@ const user = {
     updateScore: updateUserScore,
     updateCards: updateUserDisplay,
 }
-
 
 
 

@@ -1,7 +1,8 @@
 import { init } from 'ez-read';
 import { getRankWord } from './display-util';
-import comp from './comp';
-import user from './user';
+import comp from '/model/comp';
+import user from '/model/user';
+
 
 function correctUserGuess(userGuess, cardsFound)
 {

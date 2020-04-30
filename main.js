@@ -1,29 +1,31 @@
-import { any, head, init, randomChoice, not, unique, empty, last } from 'ez-read'
-import { newGameButton, choiceButtonContainer, choiceButtons, deck, deckRemaining, userResponse, setsFound } from './model';
-import user from './user';
-import comp from './comp';
+import { any, empty, head, init, not, randomChoice } from 'ez-read'
+import user from '/model/user';
+import comp from '/model/comp';
 import takeOutSets from './take-out-sets';
 import setDeckDisplay from './set-deck-display';
 import correctUserGuess from './correct-user-guess';
 import { getRankWord } from './display-util';
+import { dealCards, setInitialDisplay } from './init-game';
+import { 
+    choiceButtons, 
+    choiceButtonContainer, 
+    deck, 
+    deckRemaining, 
+    newGameButton, 
+    userResponse,
+} from '/model/model';
+
 
 
 newGameButton.addEventListener('click', runGame);
 choiceButtons.addEventListener('click', processUserGuess);
 userResponse.addEventListener('click', processResponse);
 
+
 function runGame()
 {
-    start(deck);
-    choiceButtonContainer.classList.add('is-visible');
-    userResponse.classList.remove('is-visible');
-    setDeckDisplay()
-    comp.score = 0;
-    user.score = 0;
-    user.updateScore()
-    comp.updateScore()
-    comp.message.innerHTML = `Your Turn.`;
-    setsFound.innerHTML = `Sets Found:`;
+    dealCards(deck);
+    setInitialDisplay()
 }
 
 
@@ -175,14 +177,3 @@ function correctCompGuess()
 }
 
 
-
-
-
-function start(deck)
-{
-    deck.reset()
-    user.hand = deck.deal(7);
-    comp.hand = deck.deal(7);
-    user.updateCards();
-    deckRemaining.innerHTML = `Number of cards remaining: ${deck.deck.length}`;
-}
