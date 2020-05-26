@@ -1,5 +1,5 @@
 import updateCompDisplay  from '../update-comp-display';
-import { compMessage, compScoreDisplay } from '/model/model';
+import { compMessage, compScoreDisplay } from './model';
 
 const comp = {
     guessOptions: [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'],

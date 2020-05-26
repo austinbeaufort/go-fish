@@ -1,6 +1,6 @@
 import { any, empty, head, init, not, randomChoice } from 'ez-read'
-import user from '/model/user';
-import comp from '/model/comp';
+import user from './model/user';
+import comp from './model/comp';
 import takeOutSets from './take-out-sets';
 import setDeckDisplay from './set-deck-display';
 import correctUserGuess from './correct-user-guess';
@@ -13,7 +13,7 @@ import {
     deckRemaining, 
     newGameButton, 
     userResponse,
-} from '/model/model';
+} from './model/model';
 
 
 

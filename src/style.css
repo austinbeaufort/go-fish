@@ -1,10 +1,9 @@
 body {
     text-align: center;
-    background: url(/images/background.png) lightblue;
+    background: url(images/background.png) lightblue;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Permanent Marker', cursive;
-    /* background-position: 0px -100px; */
 }
 
 .new-game {

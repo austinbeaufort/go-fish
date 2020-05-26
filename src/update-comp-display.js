@@ -1,6 +1,6 @@
-import { compCards, cardImages } from '/model/model';
+import { compCards, cardImages } from './model/model';
 import { clearCards, appendNewCard } from './display-util';
-import  comp  from '/model/comp';
+import  comp  from './model/comp';
 
 function updateCompDisplay()
 {

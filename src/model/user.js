@@ -1,5 +1,5 @@
 import updateUserDisplay from '../update-user-display';
-import { userScoreDisplay } from '/model/model';
+import { userScoreDisplay } from './model';
 
 
 const user = {

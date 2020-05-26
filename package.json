@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "del -f dist && parcel build index.html --public-url /go-fish",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +14,10 @@
   "dependencies": {
     "classic-deck": "^1.0.4",
     "ez-read": "^1.0.9",
-    "model": "^6.0.1",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

@@ -1,7 +1,7 @@
 import { init, last } from 'ez-read';
-import { cardImages, displayHand } from '/model/model';
+import { cardImages, displayHand } from './model/model';
 import { clearCards, appendNewCard, getRankWord } from './display-util';
-import user from '/model/user';
+import user from './model/user';
 
 
 function updateUserDisplay()

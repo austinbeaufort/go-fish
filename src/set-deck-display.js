@@ -1,4 +1,4 @@
-import { cardDeck, cardImages, deck } from '/model/model';
+import { cardDeck, cardImages, deck } from './model/model';
 
 
 function setDeckDisplay()

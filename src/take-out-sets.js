@@ -1,7 +1,7 @@
 import { init, unique } from 'ez-read';
-import { setsFound } from '/model/model';
+import { setsFound } from './model/model';
 import { getRankWord } from './display-util';
-import comp from '/model/comp';
+import comp from './model/comp';
 
 
 function takeOutSets(player)

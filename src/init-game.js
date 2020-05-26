@@ -1,6 +1,6 @@
-import user from '/model/user';
-import comp from '/model/comp';
-import { choiceButtonContainer, deck, deckRemaining, setsFound, userResponse } from '/model/model';
+import user from './model/user';
+import comp from './model/comp';
+import { choiceButtonContainer, deck, deckRemaining, setsFound, userResponse } from './model/model';
 
 
 function dealCards(deck)
